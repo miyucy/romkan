@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["esnext"],
-    "module": "umd",
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "inlineSources": true,
-    "declaration": true,
-    "outDir": "dist"
+    "module": "commonjs",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "diagnostics": true,
+    "outDir": "./lib",
+    "declaration": true
   },
-  "files": ["src/index.ts"]
+  "include": ["./src/*.ts"]
 }
